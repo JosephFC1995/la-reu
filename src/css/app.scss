@@ -1,0 +1,213 @@
+// app global css in SCSS form
+body {
+  background-color: #fff6e9;
+}
+.__background {
+  &--image {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &--opacity {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    /* height: 100%; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    &.--ab {
+      position: absolute;
+    }
+  }
+}
+.__page_content {
+  min-height: 100vh;
+  &.center-x-y {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.w-100 {
+  width: 100%;
+}
+.p {
+  &-0 {
+    padding: 0 !important;
+  }
+  &b {
+    &-6 {
+      padding-bottom: 4rem !important;
+    }
+  }
+  &l {
+    &-1 {
+      padding-left: 0.3rem !important;
+    }
+  }
+  &r {
+    &-1 {
+      padding-right: 0.3rem !important;
+    }
+  }
+  &x {
+    &-3 {
+      padding: 0 1rem !important;
+    }
+  }
+  &t {
+    &-3 {
+      padding-top: 1rem !important;
+    }
+  }
+}
+
+.m {
+  &y {
+    &-3 {
+      margin: 1rem 0 !important;
+    }
+  }
+  &t {
+    &-3 {
+      margin-top: 1rem !important;
+    }
+    &-4 {
+      margin-top: 2rem !important;
+    }
+  }
+  &b {
+    &-0 {
+      margin-bottom: 0rem !important;
+    }
+    &-3 {
+      margin-bottom: 1rem !important;
+    }
+    &-4 {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+._link {
+  text-decoration: underline;
+}
+.__button {
+  padding: 0.3rem 0;
+  font-weight: 600;
+  text-transform: none;
+  &._primary {
+    background: #bd2b2a !important;
+  }
+  &._facebook {
+    background: #0051c0 !important;
+  }
+  &._instagram {
+    background: #ff2a82 !important;
+  }
+  &._transparent {
+    background: transparent !important;
+    color: #292929 !important;
+    box-shadow: none !important;
+    .q-btn__wrapper {
+      &::before {
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+.__form_custom {
+  .__label {
+    font-weight: 600;
+    color: #282828;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .q-field__control {
+    &::before {
+      background: transparent !important;
+    }
+  }
+  .q-field__inner {
+    background: #fff;
+    border-radius: 0.3rem !important;
+    overflow: hidden;
+  }
+  .q-field__label {
+    font-weight: 600;
+    color: #90949b;
+    font-size: 14px;
+  }
+}
+.__form_custom {
+  &.__bac_empty {
+    .q-field__control {
+      height: 48px;
+      background: transparent !important;
+    }
+  }
+  .q-slider {
+    color: #282828 !important;
+  }
+  &._alter {
+    .q-field__inner {
+      color: #fff7ea;
+      background: #fff7ea;
+      border: 2px solid #c0b6ac;
+    }
+    .q-field__label {
+      color: #2f2e2e;
+      font-weight: 400;
+    }
+  }
+}
+.__label {
+  font-weight: 600;
+  color: #282828;
+  margin-bottom: 5px;
+  display: block;
+}
+.__map {
+  height: 100% !important;
+  .vue-map-hidden {
+    display: block !important;
+  }
+  .__ico_maker {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+.__header {
+  position: absolute;
+  z-index: 9;
+}
+
+.button__map {
+  position: absolute;
+  bottom: 5rem;
+  left: 1rem;
+  right: 1rem;
+}
